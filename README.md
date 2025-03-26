@@ -4,6 +4,8 @@
 
 **CloudModelTrainer** is a Python tool designed to mount remote storage, load datasets, fine-tune models, and train AI directly from a mounted server. It allows you to train large AI models with datasets stored remotely and is optimized to work with GPUs using ROCm. The tool provides an easy setup for both local and remote training environments.
 
+![Remote Trainer](images/remote-trainer-downloding.png) 
+
 With this tool, you can:
 - Mount remote directories via SSHFS.
 - Install necessary dependencies (like SSHFS) if not already present.
