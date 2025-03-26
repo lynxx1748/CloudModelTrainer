@@ -11,6 +11,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from datasets import load_dataset
 from huggingface_hub import login
 
+
 # --- Configuration ---
 MOUNTED_DIR = "/mnt/remote"  # Default mount point, can be customized
 TEMP_DIR = "/tmp/ai_training"
@@ -114,7 +115,6 @@ def load_dataset_from_hub():
             DATASET_NAME,
             split="train",
             trust_remote_code=True,
-            streaming=True,
             cache_dir=dataset_path,
             token="YOUR_HF_TOKEN"
         )
